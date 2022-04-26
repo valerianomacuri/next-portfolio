@@ -14,10 +14,9 @@ import {
   CloseButton,
   Avatar,
   WrapItem,
+  Link,
 } from "@chakra-ui/react"
 import { AiOutlineMenu } from "react-icons/ai"
-import { FiTwitch } from "react-icons/fi"
-// import { Logo } from "@choc-ui/logo"
 
 export function Navbar() {
   const bg = useColorModeValue("white", "gray.800")
@@ -73,11 +72,29 @@ export function Navbar() {
               display={{ base: "none", md: "inline-flex" }}
             >
               <Button variant="ghost">Home</Button>
-              <Button variant="ghost">Work</Button>
-              <Button variant="ghost">Blog</Button>
+              <Button
+                as="a"
+                variant="ghost"
+                href="#ProjectList"
+              >
+                Work
+              </Button>
+              <Button
+                variant="ghost"
+                as="a"
+                href="#SkillList"
+              >
+                Skills
+              </Button>
               <Button variant="ghost">Apps</Button>
             </HStack>
-            <Button colorScheme={"cyan"} size="sm">
+            <Button
+              as={"a"}
+              colorScheme={"cyan"}
+              size="sm"
+              target={"_blank"}
+              href="https://wa.me/+51934643232"
+            >
               Contact Me
             </Button>
             <Box
@@ -119,11 +136,21 @@ export function Navbar() {
                 <Button w="full" variant="ghost">
                   Home
                 </Button>
-                <Button w="full" variant="ghost">
+                <Button
+                  as={"a"}
+                  w="full"
+                  variant="ghost"
+                  href="#ProjectList"
+                >
                   Work
                 </Button>
-                <Button w="full" variant="ghost">
-                  Blog
+                <Button
+                  as={"a"}
+                  w="full"
+                  variant="ghost"
+                  href="#SkillList"
+                >
+                  Skills
                 </Button>
                 <Button w="full" variant="ghost">
                   Apps

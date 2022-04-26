@@ -7,14 +7,20 @@ import {
 } from "@chakra-ui/react"
 
 import { SkillItem } from "./SkillItem"
+import { tools } from "@/db"
 
 export function SkillList() {
   return (
     <Box
+      id="SkillList"
       px={8}
-      py={20}
+      py={{
+        base: 10,
+        md: 20,
+      }}
       mx="auto"
       bg={useColorModeValue("white", "gray.800")}
+      maxWidth="container.xl"
     >
       <Box textAlign={{ lg: "center" }}>
         <chakra.p
@@ -43,16 +49,14 @@ export function SkillList() {
           base: 4,
         }}
         justifyItems="center"
-        py={24}
+        py={{
+          base: 12,
+          md: 24,
+        }}
       >
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
+        {tools.map(tool => (
+          <SkillItem tool={tool} />
+        ))}
       </SimpleGrid>
     </Box>
   )

@@ -7,15 +7,19 @@ import {
   useColorModeValue,
   Icon,
 } from "@chakra-ui/react"
-import { ProjectCard } from "./ProjectCard"
 import { ProjectCardTwo } from "./ProjectCardTwo"
 export function ProjectList() {
   return (
     <Box
+      id="ProjectList"
       px={8}
-      py={20}
+      py={{
+        base: 10,
+        md: 20,
+      }}
       mx="auto"
       bg={useColorModeValue("white", "gray.800")}
+      maxWidth="container.xl"
     >
       <Box textAlign={{ lg: "center" }}>
         <chakra.p
@@ -43,7 +47,11 @@ export function ProjectList() {
         spacing={{
           base: 4,
         }}
-        pt={24}
+        pt={{
+          base: 12,
+          sm: 12,
+          md: 24,
+        }}
       >
         <ProjectCardTwo />
         <ProjectCardTwo />

@@ -8,6 +8,7 @@ import {
   Image,
   Text,
   Icon,
+  Link,
 } from "@chakra-ui/react"
 
 export const Hero = () => {
@@ -44,9 +45,9 @@ export const Hero = () => {
           fontSize={{ base: "lg", md: "xl" }}
           color={useColorModeValue("gray.600", "gray.300")}
         >
-          Hi, I introduce myself, I am a person who loves
-          the world of programming, I am open to work, I
-          excel at developing frontend applications with
+          Hi, I am Leonardo Valeriano, I am a person who
+          loves the world of programming, I am open to work,
+          I excel at developing frontend applications with
           React.
           <br /> I have had great achievements such as
           completing the School of Javascript, or the
@@ -69,6 +70,8 @@ export const Hero = () => {
             mb={{ base: 2, sm: 0 }}
             size="lg"
             cursor="pointer"
+            href="https://wa.me/+51934643232"
+            target={"_blank"}
           >
             Contact Me
             <Icon
@@ -94,6 +97,8 @@ export const Hero = () => {
             mb={{ base: 2, sm: 0 }}
             size="lg"
             cursor="pointer"
+            target={"_blank"}
+            href="https://valerianomacuri.github.io/assets/documents/Leonardo%20Valeriano%20SAMPLE%20CV%20HQ.pdf"
           >
             Download CV
             <Icon
