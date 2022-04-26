@@ -3,13 +3,12 @@ import {
   chakra,
   Box,
   SimpleGrid,
-  Flex,
   useColorModeValue,
-  Icon,
 } from "@chakra-ui/react"
-import { ProjectCard } from "./ProjectCard"
-import { ProjectCardTwo } from "./ProjectCardTwo"
-export function ProjectList() {
+
+import { SkillItem } from "./SkillItem"
+
+export function SkillList() {
   return (
     <Box
       px={8}
@@ -26,7 +25,7 @@ export function ProjectList() {
           letterSpacing="tight"
           color={useColorModeValue("gray.900", undefined)}
         >
-          Work
+          Skills
         </chakra.p>
         <chakra.p
           mt={4}
@@ -35,22 +34,25 @@ export function ProjectList() {
           mx={{ lg: "auto" }}
           color={useColorModeValue("gray.500", "gray.400")}
         >
-          I have done some projects like ...
+          Algunas de las herramientas con las que trabajo...
         </chakra.p>
       </Box>
       <SimpleGrid
-        columns={{ base: 1, sm: 1, md: 2, lg: 3 }}
+        columns={{ base: 1, sm: 2, md: 3, lg: 4 }}
         spacing={{
           base: 4,
         }}
-        pt={24}
+        justifyItems="center"
+        py={24}
       >
-        <ProjectCardTwo />
-        <ProjectCardTwo />
-        <ProjectCardTwo />
-        <ProjectCardTwo />
-        <ProjectCardTwo />
-        <ProjectCardTwo />
+        <SkillItem />
+        <SkillItem />
+        <SkillItem />
+        <SkillItem />
+        <SkillItem />
+        <SkillItem />
+        <SkillItem />
+        <SkillItem />
       </SimpleGrid>
     </Box>
   )
