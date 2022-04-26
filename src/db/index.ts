@@ -104,6 +104,12 @@ export const tools = [
       "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
   },
   {
+    name: "Vue",
+    logo: "https://www.svgrepo.com/show/374175/vue.svg",
+    description:
+      "An approachable, performant and versatile framework for building web user interfaces.",
+  },
+  {
     name: "Redux",
     logo: "https://www.svgrepo.com/show/354274/redux.svg",
     description:
