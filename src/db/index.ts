@@ -1,75 +1,65 @@
 export const projects = [
   {
-    picture: "./assets/images/journal-app.png",
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080074/app-sr_kdlzsb.jpg",
+    description:
+      "S&R provides maintenance services to a large mining consortium in Puno. They needed to streamline their communication and information storage methods, to make processes more efficient. VALTEC developed a mobile application to organize and consolidate all the information on the operation, providing a precise solution.",
+    repository: null,
+  },
+  {
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080076/agp-web_qrsznd.gif",
+    description:
+      "AGP is a company dedicated to the R&D of technologies for the automotive industry. When their database grew exponentially, the excel dashboard they used was no longer enough. VALTEC developed for them a web application that notably improved the way they carry out their processes and included all their users.",
+    repository: null,
+  },
+  {
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/journal-app_yk3rrp.png",
     description:
       "Application to create, save, modify and delete notes, where you can also upload images, to access it you have to login, either with an email or with a gmail account. This application was made with React, Javascript, Redux (for state management), Firebase (for authentication), Cloudinary (for uploading images).",
-    app: false,
     repository:
       "https://github.com/valerianomacuri/journal-app",
-    apk: "",
   },
   {
-    picture: "./assets/images/rn-pokedex.jpg",
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651079601/rn-pokedex_vjx9mp.jpg",
     description:
       "This application was made with react native, typescript. I consumed the API from pokeapi.co. You can look for your favorite pokemon and know its characteristics",
-    app: true,
     repository:
       "https://github.com/valerianomacuri/rn-pokedex",
-    apk: "",
   },
   {
-    picture: "./assets/images/rn-netflix.jpg",
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/rn-netflix_s03jyw.jpg",
     description:
       "This application was made with react native, typescript. I consumed the API from The Movie Database. You can search for the most popular movies, the most recent ones, in premieres and know their synopsis, and the cast",
-    app: true,
     repository:
       "https://github.com/valerianomacuri/react-native-netflix",
-    apk: "",
   },
   {
-    picture: "./assets/images/merch.png",
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/merch_ro91xb.png",
     description:
       "Ecommerce application that integrates the Paypal API, typescript, react hooks and react router were used for this project.",
-    app: false,
     repository:
       "https://github.com/valerianomacuri/programming-merch",
-    apk: "",
   },
   {
-    picture: "./assets/images/gif-expert-app.png",
-    description:
-      "Application made with react, you can search for your favorite gifs, it shows you gifs of 20 results, the API of Giphy developers is consumed.",
-    app: false,
-    repository:
-      "https://github.com/valerianomacuri/react-gifexpertapp",
-    apk: "",
-  },
-  {
-    picture: "./assets/images/jondev-notes.png",
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/jondev-notes_ocyp8x.png",
     description:
       "This app allows you to save notes and to-do lists, use as storage localStorage",
-    app: false,
     repository:
       "https://github.com/valerianomacuri/jondev-notes",
-    apk: "",
   },
   {
-    picture: "./assets/images/netflix.jpg",
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/netflix_qqtmut.jpg",
     description:
       "It is a netflix landing page clone made with HTML and CSS",
-    app: false,
     repository:
       "https://github.com/valerianomacuri/netflix",
-    apk: "",
-  },
-  {
-    picture: "./assets/images/doge-exchange.jpg",
-    description:
-      "Application made with react consuming the CoinGecko API",
-    app: false,
-    repository:
-      "https://github.com/valerianomacuri/doge-exchange",
-    apk: "",
   },
 ]
 

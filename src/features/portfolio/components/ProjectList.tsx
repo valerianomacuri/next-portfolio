@@ -8,6 +8,7 @@ import {
   Icon,
 } from "@chakra-ui/react"
 import { ProjectCardTwo } from "./ProjectCardTwo"
+import { projects } from "@/db"
 export function ProjectList() {
   return (
     <Box
@@ -43,7 +44,7 @@ export function ProjectList() {
         </chakra.p>
       </Box>
       <SimpleGrid
-        columns={{ base: 1, sm: 1, md: 2, lg: 3 }}
+        columns={{ base: 1, sm: 1, md: 2, lg: 2 }}
         spacing={{
           base: 4,
         }}
@@ -53,12 +54,12 @@ export function ProjectList() {
           md: 24,
         }}
       >
-        <ProjectCardTwo />
-        <ProjectCardTwo />
-        <ProjectCardTwo />
-        <ProjectCardTwo />
-        <ProjectCardTwo />
-        <ProjectCardTwo />
+        {projects.map(project => (
+          <ProjectCardTwo
+            project={project}
+            key={project.picture}
+          />
+        ))}
       </SimpleGrid>
     </Box>
   )

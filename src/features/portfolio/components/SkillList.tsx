@@ -55,7 +55,7 @@ export function SkillList() {
         }}
       >
         {tools.map(tool => (
-          <SkillItem tool={tool} />
+          <SkillItem tool={tool} key={tool.name} />
         ))}
       </SimpleGrid>
     </Box>

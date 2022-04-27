@@ -98,7 +98,7 @@ export const Hero = () => {
             size="lg"
             cursor="pointer"
             target={"_blank"}
-            href="https://valerianomacuri.github.io/assets/documents/Leonardo%20Valeriano%20SAMPLE%20CV%20HQ.pdf"
+            href="https://res.cloudinary.com/valerianomacuri/image/upload/v1651079673/Leonardo_Valeriano_SAMPLE_CV_HQ_ad230d.pdf"
           >
             Download CV
             <Icon
