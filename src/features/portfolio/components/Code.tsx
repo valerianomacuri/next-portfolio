@@ -1,5 +1,5 @@
 import { CodeBlock, dracula } from "react-code-blocks"
-import styles from "../styles/AboutTabs.module.css"
+import styles from "../styles/Code.module.css"
 
 type CodeProps = {
   children?: React.ReactNode
