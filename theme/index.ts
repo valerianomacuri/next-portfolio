@@ -4,6 +4,9 @@
 import {
   extendTheme,
   type ThemeConfig,
+  Theme,
+  withDefaultColorScheme,
+  ComponentStyleConfig,
 } from "@chakra-ui/react"
 
 // 2. Add your color mode config
@@ -13,6 +16,22 @@ const config: ThemeConfig = {
 }
 
 // 3. extend the theme
-const theme = extendTheme({ config })
+const theme = extendTheme(
+  {
+    config,
+    fonts: {
+      heading: "'Fira Code', monospace",
+      body: "'Fira Code', monospace",
+    },
+    styles: {
+      global: {
+        body: {
+          backgroundColor: "#011627",
+        },
+      },
+    },
+  },
+  withDefaultColorScheme({ colorScheme: "blue" }),
+)
 
 export default theme

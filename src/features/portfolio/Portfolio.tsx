@@ -1,5 +1,7 @@
+import { Button, Container } from "@chakra-ui/react"
 import { Fragment } from "react"
 import { Footer } from "./components/Footer"
+import { Hello } from "./components/Hello"
 import { Hero } from "./components/Hero"
 import { Navbar } from "./components/Navbar"
 import { ProjectCardTwo } from "./components/ProjectCardTwo"
@@ -12,13 +14,21 @@ export const Portfolio = () => {
       <Navbar />
       <div
         style={{
-          height: 72,
+          height: 56,
         }}
       />
-      <Hero />
+      {/* <Hero />
+      <Button>Hello</Button>
       <ProjectList />
       <SkillList />
-      <Footer />
+      <Footer /> */}
+
+      <Container
+        maxW="container.2xl"
+        minH={"calc(100vh - 56px)"}
+      >
+        <Hello />
+      </Container>
     </Fragment>
   )
 }

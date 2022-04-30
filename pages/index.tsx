@@ -1,14 +1,9 @@
-import { Button } from "@chakra-ui/react"
 import type { NextPage } from "next"
-import { Portfolio } from "@/features/portfolio/Portfolio"
 import { Fragment } from "react"
+import { Hello } from "@/features/portfolio/components/Hello"
 
 const Home: NextPage = () => {
-  return (
-    <Fragment>
-      <Portfolio />
-    </Fragment>
-  )
+  return <Hello />
 }
 
 export default Home

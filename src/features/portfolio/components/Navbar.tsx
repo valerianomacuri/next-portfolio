@@ -5,98 +5,101 @@ import {
   Box,
   Flex,
   useColorModeValue,
-  VisuallyHidden,
   HStack,
-  Button,
   useDisclosure,
-  VStack,
   IconButton,
   CloseButton,
-  Avatar,
-  WrapItem,
-  Link,
 } from "@chakra-ui/react"
 import { AiOutlineMenu } from "react-icons/ai"
+import { NavItem } from "./NavItem"
+import { BodyText } from "./BodyText"
+import { Lables } from "./Lables"
+import NextLink from "next/link"
+import { useRouter } from "next/router"
 
 export function Navbar() {
-  const bg = useColorModeValue("white", "gray.800")
   const mobileNav = useDisclosure()
+  const router = useRouter()
 
   return (
     <React.Fragment>
       <chakra.header
-        bg={bg}
+        bg="#011627"
         w="full"
-        px={{ base: 2, sm: 4 }}
-        py={4}
         position={"fixed"}
         zIndex={"docked"}
-        shadow={"sm"}
+        borderBottom="1px solid #1E2D3D"
+        height="56px"
       >
         <Flex
           alignItems="center"
-          justifyContent="space-between"
+          justifyContent={{
+            base: "space-between",
+            md: "flex-start",
+          }}
+          height={"100%"}
           mx="auto"
         >
-          <Flex>
-            <chakra.a
-              href="/"
-              title="Choc Home Page"
-              display="flex"
-              alignItems="center"
-            >
-              <Avatar
-                size={"sm"}
-                name="Leonardo Valeriano"
-                src="./photo.png"
-              />
-              <VisuallyHidden>Choc</VisuallyHidden>
-            </chakra.a>
-            <chakra.h1
-              fontSize="xl"
-              fontWeight="medium"
-              ml="2"
-            >
-              VM
-            </chakra.h1>
-          </Flex>
+          <Lables
+            as="h1"
+            maxW="311px"
+            w="100%"
+            padding="17px 32px"
+            color="#607B96"
+          >
+            valeriano-macuri
+          </Lables>
           <HStack
             display="flex"
             alignItems="center"
+            height={"100%"}
             spacing={1}
           >
-            <HStack
-              spacing={1}
-              mr={1}
+            <Box
+              height={"100%"}
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Button variant="ghost">Home</Button>
-              <Button
-                as="a"
-                variant="ghost"
-                href="#ProjectList"
+              <NextLink href="/" prefetch>
+                <NavItem
+                  borderBottom={
+                    router.pathname === "/"
+                      ? "3px solid #FEA55F"
+                      : ""
+                  }
+                >
+                  _hello
+                </NavItem>
+              </NextLink>
+              <NextLink href="/about" prefetch>
+                <NavItem
+                  borderBottom={
+                    router.pathname === "/about"
+                      ? "3px solid #FEA55F"
+                      : ""
+                  }
+                >
+                  _about-me
+                </NavItem>
+              </NextLink>
+              <NextLink href="/projects" prefetch>
+                <NavItem
+                  borderBottom={
+                    router.pathname === "/projects"
+                      ? "3px solid #FEA55F"
+                      : ""
+                  }
+                >
+                  _projects
+                </NavItem>
+              </NextLink>
+              <a
+                href="https://valerianomacuri.github.io/assets/documents/Leonardo%20Valeriano%20SAMPLE%20CV%20HQ.pdf"
+                target={"_blank"}
               >
-                Work
-              </Button>
-              <Button
-                variant="ghost"
-                as="a"
-                href="#SkillList"
-              >
-                Skills
-              </Button>
-              <Button variant="ghost">Apps</Button>
-            </HStack>
-            <Button
-              as={"a"}
-              colorScheme={"cyan"}
-              size="sm"
-              target={"_blank"}
-              href="https://wa.me/+51934643232"
-            >
-              Contact Me
-            </Button>
+                <NavItem>_cv</NavItem>
+              </a>
+            </Box>
             <Box
               display={{ base: "inline-flex", md: "none" }}
             >
@@ -112,50 +115,65 @@ export function Navbar() {
                 icon={<AiOutlineMenu />}
                 onClick={mobileNav.onOpen}
               />
-
-              <VStack
+              <Box
                 pos="absolute"
                 top={0}
                 left={0}
                 right={0}
                 display={mobileNav.isOpen ? "flex" : "none"}
                 flexDirection="column"
-                p={2}
-                pb={4}
-                m={2}
-                bg={bg}
-                spacing={3}
+                alignItems={"center"}
+                bg="#011627"
                 rounded="sm"
                 shadow="sm"
               >
                 <CloseButton
                   aria-label="Close menu"
                   onClick={mobileNav.onClose}
+                  height="56px"
                 />
+                <NextLink href="/" prefetch>
+                  <NavItem
+                    w="full"
+                    justifyContent={"flex-start"}
+                  >
+                    _hello
+                  </NavItem>
+                </NextLink>
 
-                <Button w="full" variant="ghost">
-                  Home
-                </Button>
-                <Button
-                  as={"a"}
-                  w="full"
-                  variant="ghost"
-                  href="#ProjectList"
+                <NextLink href="/about" prefetch>
+                  <NavItem
+                    justifyContent={"flex-start"}
+                    w="full"
+                    borderTop={"none"}
+                    borderBottom="none"
+                  >
+                    _about-me
+                  </NavItem>
+                </NextLink>
+                <NextLink href="/projects" prefetch>
+                  <NavItem
+                    w="full"
+                    justifyContent={"flex-start"}
+                  >
+                    _projects
+                  </NavItem>
+                </NextLink>
+                <a
+                  href="https://valerianomacuri.github.io/assets/documents/Leonardo%20Valeriano%20SAMPLE%20CV%20HQ.pdf"
+                  target={"_blank"}
+                  style={{
+                    width: "100%",
+                  }}
                 >
-                  Work
-                </Button>
-                <Button
-                  as={"a"}
-                  w="full"
-                  variant="ghost"
-                  href="#SkillList"
-                >
-                  Skills
-                </Button>
-                <Button w="full" variant="ghost">
-                  Apps
-                </Button>
-              </VStack>
+                  <NavItem
+                    w="full"
+                    justifyContent={"flex-start"}
+                  >
+                    _cv
+                  </NavItem>
+                </a>
+              </Box>
             </Box>
           </HStack>
         </Flex>
