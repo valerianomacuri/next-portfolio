@@ -2,13 +2,13 @@ import {
   Button,
   ButtonProps,
   ComponentWithAs,
+  forwardRef,
 } from "@chakra-ui/react"
-import { Lables } from "./Lables"
 
 export const NavItem: ComponentWithAs<
   "button",
   ButtonProps
-> = ({ children, ...props }) => {
+> = forwardRef(({ children, ...props }, ref) => {
   return (
     <Button
       variant="ghost"
@@ -22,8 +22,9 @@ export const NavItem: ComponentWithAs<
       lineHeight="21px"
       color="#fff"
       {...props}
+      ref={ref}
     >
       {children}
     </Button>
   )
-}
+})

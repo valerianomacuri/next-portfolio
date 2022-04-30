@@ -28,7 +28,10 @@ export const Projects = () => {
               gap={"40px"}
             >
               {projects.map(project => (
-                <ProjectItem project={project} />
+                <ProjectItem
+                  key={project.picture}
+                  project={project}
+                />
               ))}
             </SimpleGrid>
           </TabPanel>

@@ -1,6 +1,5 @@
 import {
   Box,
-  Image,
   ScaleFade,
   SimpleGrid,
   SlideFade,
@@ -16,6 +15,7 @@ import {
 } from "react-icons/fi"
 import { BodyText } from "./BodyText"
 import { HeadlineText } from "./HeadlineText"
+import { ImageMotion } from "./ImageMotion"
 import { SubheadlineText } from "./SubheadlineText"
 export const Hello = () => {
   return (
@@ -141,44 +141,7 @@ export const Hello = () => {
           }}
         >
           <Box position={"relative"} cursor={"pointer"}>
-            <Box
-              style={{
-                position: "absolute",
-                backgroundColor: "#011221",
-                borderRadius: "50%",
-                height: "220px",
-                width: "220px",
-                transform:
-                  "translate3d(44.6429px, 0px, 0px)",
-                bottom: "-14px",
-                left: "-64px",
-                zIndex: "-1",
-              }}
-              shadow="2xl"
-            />
-            <ScaleFade initialScale={0.9} in={true}>
-              <Image
-                src="./photo.png"
-                alt="perfil"
-                objectFit="cover"
-                borderRadius={"50%"}
-                shadow="2xl"
-              />
-            </ScaleFade>
-            <Box
-              style={{
-                position: "absolute",
-                border: "2px solid #011221",
-                borderRadius: "50%",
-                height: "220px",
-                width: "220px",
-                transform:
-                  "translate3d(44.6429px, 0px, 0px)",
-                bottom: "12px",
-                right: "33px",
-              }}
-              shadow="2xl"
-            />
+            <ImageMotion />
           </Box>
         </Box>
       </SimpleGrid>
