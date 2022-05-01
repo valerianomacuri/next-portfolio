@@ -23,6 +23,13 @@ export const projects = [
   },
   {
     picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651425722/Captura_rl6n3w.png",
+    description:
+      "Search and listing movies, made with React Query, React Router and Chakra UI",
+    repository: "https://reactplus.netlify.app/#/movies",
+  },
+  {
+    picture:
       "https://res.cloudinary.com/valerianomacuri/image/upload/v1651425268/next-pokemon_hqimz1.png",
     description:
       "App that listing pokemon and you can see details of pokemon, using Next.js with Static Site Generation",
