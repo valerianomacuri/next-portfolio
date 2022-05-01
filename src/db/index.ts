@@ -23,6 +23,13 @@ export const projects = [
   },
   {
     picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651425268/next-pokemon_hqimz1.png",
+    description:
+      "App that listing pokemon and you can see details of pokemon, using Next.js with Static Site Generation",
+    repository: "https://pokemon-static-iota.vercel.app/",
+  },
+  {
+    picture:
       "https://res.cloudinary.com/valerianomacuri/image/upload/v1651079601/rn-pokedex_vjx9mp.jpg",
     description:
       "This application was made with react native, typescript. I consumed the API from pokeapi.co. You can look for your favorite pokemon and know its characteristics",
