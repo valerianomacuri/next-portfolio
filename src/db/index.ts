@@ -30,6 +30,21 @@ export const projects = [
   },
   {
     picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651626910/vue_journal_mbxqe6.png",
+    description:
+      "Notes app created with Vue, Vuex and Vue Router, with the composition API, it also has authentication with firebase, and consumes the firebase REST API to store the notes.",
+    repository:
+      "https://github.com/valerianomacuri/vue-journal-app",
+  },
+  {
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651626916/pokeap_hhq9vh.png",
+    description:
+      "Guess who is that pokemon, interactive game made with Vue 3.",
+    repository: "https://vue-example-pokemon.netlify.app/",
+  },
+  {
+    picture:
       "https://res.cloudinary.com/valerianomacuri/image/upload/v1651425268/next-pokemon_hqimz1.png",
     description:
       "App that listing pokemon and you can see details of pokemon, using Next.js with Static Site Generation",
