@@ -59,7 +59,7 @@ export const Hello = () => {
                 md: "32px",
               }}
             >
-              {">"} Front-end developer
+              {">"} Full-stack developer
             </SubheadlineText>
           </SlideFade>
           <Flex my="2">
