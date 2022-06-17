@@ -94,7 +94,7 @@ export function Navbar() {
                 </NavItem>
               </NextLink>
               <a
-                href="https://res.cloudinary.com/valerianomacuri/image/upload/v1651079673/Leonardo_Valeriano_SAMPLE_CV_HQ_ad230d.pdf"
+                href="https://res.cloudinary.com/valerianomacuri/image/upload/v1655507898/Leonardo_Valeriano_SAMPLE_CV_HQ_yqr02h.pdf"
                 target={"_blank"}
                 rel="noreferrer"
               >

@@ -8,9 +8,16 @@ import {
   TabPanels,
   Tabs,
 } from "@chakra-ui/react"
+import { useEffect, useState } from "react"
 import { ProjectItem } from "./ProjectItem"
 
 export const Projects = () => {
+  const [repositories, setRepositories] = useState<any[]>([])
+  useEffect(() => {
+    fetch("https://gh-pinned-repos.egoist.sh/?username=valerianomacuri")
+      .then(res => res.json())
+      .then(setRepositories)
+  }, [])
   return (
     <Box>
       <Tabs>
@@ -27,6 +34,18 @@ export const Projects = () => {
               }}
               gap={"40px"}
             >
+              {
+                (repositories.length != 0) && repositories.map((project: any, i: number) => (
+                  <ProjectItem
+                    key={i + 1}
+                    project={{
+                      picture: project.image,
+                      description: project.description,
+                      repository: project.link,
+                    }}
+                  />
+                ))
+              }
               {projects.map(project => (
                 <ProjectItem
                   key={project.picture}
