@@ -1,6 +1,7 @@
 import { projects } from "@/db"
 import {
   Box,
+  Progress,
   SimpleGrid,
   Tab,
   TabList,
@@ -22,7 +23,8 @@ export const Projects = () => {
     <Box>
       <Tabs>
         <TabList>
-          <Tab>projects.js</Tab>
+          <Tab>frontend.js</Tab>
+          <Tab>backend.go</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
@@ -34,8 +36,25 @@ export const Projects = () => {
               }}
               gap={"40px"}
             >
+              {projects.map(project => (
+                <ProjectItem
+                  key={project.picture}
+                  project={project}
+                />
+              ))}
+            </SimpleGrid>
+          </TabPanel>
+          <TabPanel>
+            <SimpleGrid
+              columns={{
+                base: 1,
+                sm: 2,
+                md: 3,
+              }}
+              gap={"40px"}
+            >
               {
-                (repositories.length != 0) && repositories.map((project: any, i: number) => (
+                (repositories.length != 0) ? repositories.map((project: any, i: number) => (
                   <ProjectItem
                     key={i + 1}
                     project={{
@@ -44,14 +63,8 @@ export const Projects = () => {
                       repository: project.link,
                     }}
                   />
-                ))
+                )) : <Progress size='xs' isIndeterminate />
               }
-              {projects.map(project => (
-                <ProjectItem
-                  key={project.picture}
-                  project={project}
-                />
-              ))}
             </SimpleGrid>
           </TabPanel>
         </TabPanels>
