@@ -12,7 +12,6 @@ export const ImageMotion = ({
     <motion.div ref={constraintsRef}>
       <motion.div
         style={{
-          backgroundColor: "red",
           backgroundImage: "url(./photo.png)",
           borderRadius: "50%",
           backgroundSize: "cover",

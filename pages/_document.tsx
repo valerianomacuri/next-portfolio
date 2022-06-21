@@ -26,6 +26,14 @@ export default class Document extends NextDocument {
           <title>
             Valeriano Macuri | Frontend Developer
           </title>
+          <meta
+            name="description"
+            content="Desarrollador Fullstack Portafolio Leonardo Valeriano Macuri"
+          />
+          <meta name="keywords"
+            content="leonardo, valeriano, macuri, frontend, fullstack, desarrollo, portafolio"
+          />
+          <meta name="robots" content="index" />
         </Head>
         <body>
           {/* 👇 Here's the script */}

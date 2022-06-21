@@ -44,7 +44,7 @@ export const Projects = () => {
               ))}
             </SimpleGrid>
           </TabPanel>
-          <TabPanel>
+          <TabPanel position={"relative"}>
             <SimpleGrid
               columns={{
                 base: 1,
@@ -63,7 +63,18 @@ export const Projects = () => {
                       repository: project.link,
                     }}
                   />
-                )) : <Progress size='xs' isIndeterminate />
+                )) :
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: -3,
+                      left: 0,
+                      width: "100%",
+                      height: "auto",
+                    }}
+                  >
+                    <Progress size='xs' isIndeterminate />
+                  </div>
               }
             </SimpleGrid>
           </TabPanel>
