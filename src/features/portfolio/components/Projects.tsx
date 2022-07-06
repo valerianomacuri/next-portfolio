@@ -24,7 +24,6 @@ export const Projects = () => {
       <Tabs>
         <TabList>
           <Tab>frontend.js</Tab>
-          <Tab>backend.go</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
@@ -42,40 +41,6 @@ export const Projects = () => {
                   project={project}
                 />
               ))}
-            </SimpleGrid>
-          </TabPanel>
-          <TabPanel position={"relative"}>
-            <SimpleGrid
-              columns={{
-                base: 1,
-                sm: 2,
-                md: 3,
-              }}
-              gap={"40px"}
-            >
-              {
-                (repositories.length != 0) ? repositories.map((project: any, i: number) => (
-                  <ProjectItem
-                    key={i + 1}
-                    project={{
-                      picture: project.image,
-                      description: project.description,
-                      repository: project.link,
-                    }}
-                  />
-                )) :
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: -3,
-                      left: 0,
-                      width: "100%",
-                      height: "auto",
-                    }}
-                  >
-                    <Progress size='xs' isIndeterminate />
-                  </div>
-              }
             </SimpleGrid>
           </TabPanel>
         </TabPanels>

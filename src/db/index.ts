@@ -165,3 +165,41 @@ export const tools = [
       "React Router is a fully-featured client and server-side routing library for React, a JavaScript library for building user interfaces. ",
   },
 ]
+
+export const education = [
+  {
+    name: "Platzi",
+    logo: "https://static.platzi.com/media/users-badges/team_badge.png",
+    title: "Frontend With React",
+    profile: "https://platzi.com/p/valerianomacuri/",
+    description: "I learn how to develop web, mobile, and desktop applications with React.js. The most popular JavaScript library on the market.",
+    year: 2020,
+  },
+  {
+    name: "Jetbrains Academy",
+    logo: "https://plugins.jetbrains.com/static/versions/22408/jetbrains-simple.svg",
+    title: "Frontend Development",
+    profile: "https://hyperskill.org/profile/264872801",
+    description: "The track covers the concepts of JavaScript, HTML and CSS to discover the power of modern Frontend development.",
+    year: 2022,
+  },
+  {
+    name: "SISE Institute",
+    logo: "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022018/untitled-1_11.png?SEsJQf2VVa5kKiw3zz0_PVF3rOAgvdk8&itok=EAKHVY-0",
+    title: "Technical Support",
+    profile: "",
+    description: "Computer and network hardware specialist - assembly.",
+    year: 2016,
+  },
+  {
+    name: "FreeCodeCamp",
+    logo: "https://img.stackshare.io/stack/12741/bcc87e47eb053f5947fa6dbe45beba33a3d1dc56.png",
+    title: "Responsive Web Design",
+    profile: "https://www.freecodecamp.org/valerianomacuri",
+    description: "I learn the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design.",
+    year: 2021,
+  }
+
+]
+
+export const portfolio = "https://res.cloudinary.com/valerianomacuri/image/upload/v1657079110/Leonardo_Valeriano_SAMPLE_CV_HQ_kt83pa.pdf"

@@ -16,6 +16,7 @@ import { BodyText } from "./BodyText"
 import { Lables } from "./Lables"
 import NextLink from "next/link"
 import { useRouter } from "next/router"
+import { portfolio } from "@/db"
 
 export function Navbar() {
   const mobileNav = useDisclosure()
@@ -94,7 +95,7 @@ export function Navbar() {
                 </NavItem>
               </NextLink>
               <a
-                href="https://res.cloudinary.com/valerianomacuri/image/upload/v1656736432/Leonardo_Valeriano_SAMPLE_CV_HQ_efsatu.pdf"
+                href={portfolio}
                 target={"_blank"}
                 rel="noreferrer"
               >
@@ -161,7 +162,7 @@ export function Navbar() {
                   </NavItem>
                 </NextLink>
                 <a
-                  href="https://res.cloudinary.com/valerianomacuri/image/upload/v1656736432/Leonardo_Valeriano_SAMPLE_CV_HQ_efsatu.pdf"
+                  href={portfolio}
                   target={"_blank"}
                   rel="noreferrer"
                   style={{
