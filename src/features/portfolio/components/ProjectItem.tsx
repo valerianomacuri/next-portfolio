@@ -1,20 +1,18 @@
-import { Box, Button } from "@chakra-ui/react"
-import { useState } from "react"
-import { BodyText } from "./BodyText"
+import { Box, Button } from "@chakra-ui/react";
+import { useState } from "react";
+import { BodyText } from "./BodyText";
 
 type ProjectItemProps = {
   project: {
-    picture: string
-    description: string
-    repository: string | null
-  }
-}
+    picture: string;
+    description: string;
+    repository: string | null;
+    title: string;
+  };
+};
 
-export const ProjectItem = ({
-  project,
-}: ProjectItemProps) => {
-  const [isContainImage, setIsContainImage] =
-    useState(false)
+export const ProjectItem = ({ project }: ProjectItemProps) => {
+  const [isContainImage, setIsContainImage] = useState(true);
   return (
     <Box
       display={"flex"}
@@ -26,23 +24,25 @@ export const ProjectItem = ({
       <Box
         backgroundColor={"black"}
         backgroundImage={project.picture}
-        backgroundSize={
-          isContainImage ? "contain" : "cover"
-        }
+        backgroundSize={isContainImage ? "contain" : "cover"}
         backgroundPosition={"center"}
         backgroundRepeat="no-repeat"
         cursor={"pointer"}
         style={{
-          aspectRatio: "1 / 1",
+          aspectRatio: "16 / 9",
         }}
-        onClick={() => setIsContainImage(old => !old)}
+        onClick={() => setIsContainImage((old) => !old)}
       ></Box>
       <Box
         padding={"24px"}
         display="flex"
         flexDirection={"column"}
-        height="100%"
+        minHeight="250px"
+        gap={"10px"}
       >
+        <BodyText color={"#fff"} flexGrow={1} fontSize={20}>
+          {project.title}
+        </BodyText>
         <BodyText color={"#607B96"} flexGrow={1}>
           {project.description}
         </BodyText>
@@ -51,14 +51,12 @@ export const ProjectItem = ({
           bg={"#1C2B3A"}
           color="white"
           width={"fit-content"}
-          href={
-            project.repository ? project.repository : ""
-          }
+          href={project.repository ? project.repository : ""}
           isDisabled={!project.repository}
         >
           view-project
         </Button>
       </Box>
     </Box>
-  )
-}
+  );
+};

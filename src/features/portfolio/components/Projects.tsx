@@ -1,4 +1,4 @@
-import { projects } from "@/db"
+import { projects } from "@/db";
 import {
   Box,
   Progress,
@@ -8,17 +8,17 @@ import {
   TabPanel,
   TabPanels,
   Tabs,
-} from "@chakra-ui/react"
-import { useEffect, useState } from "react"
-import { ProjectItem } from "./ProjectItem"
+} from "@chakra-ui/react";
+import { useEffect, useState } from "react";
+import { ProjectItem } from "./ProjectItem";
 
 export const Projects = () => {
-  const [repositories, setRepositories] = useState<any[]>([])
+  const [repositories, setRepositories] = useState<any[]>([]);
   useEffect(() => {
     fetch("https://gh-pinned-repos.egoist.sh/?username=valerianomacuri")
-      .then(res => res.json())
-      .then(setRepositories)
-  }, [])
+      .then((res) => res.json())
+      .then(setRepositories);
+  }, []);
   return (
     <Box>
       <Tabs>
@@ -30,16 +30,15 @@ export const Projects = () => {
             <SimpleGrid
               columns={{
                 base: 1,
-                sm: 2,
-                md: 3,
+                sm: 1,
+                md: 2,
+                lg: 2,
+                xl: 3,
               }}
               gap={"40px"}
             >
-              {projects.map(project => (
-                <ProjectItem
-                  key={project.picture}
-                  project={project}
-                />
+              {projects.map((project) => (
+                <ProjectItem key={project.picture} project={project} />
               ))}
             </SimpleGrid>
           </TabPanel>
@@ -47,5 +46,5 @@ export const Projects = () => {
       </Tabs>
       <Box></Box>
     </Box>
-  )
-}
+  );
+};

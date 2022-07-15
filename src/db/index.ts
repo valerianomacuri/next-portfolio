@@ -1,96 +1,91 @@
 export const projects = [
-  {
-    picture:
-      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080074/app-sr_kdlzsb.jpg",
-    description:
-      "S&R provides maintenance services to a large mining consortium in Puno. They needed to streamline their communication and information storage methods, to make processes more efficient. VALTEC developed a mobile application to organize and consolidate all the information on the operation, providing a precise solution.",
-    repository: null,
-  },
-  {
-    picture:
-      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080076/agp-web_qrsznd.gif",
-    description:
-      "AGP is a company dedicated to the R&D of technologies for the automotive industry. When their database grew exponentially, the excel dashboard they used was no longer enough. VALTEC developed for them a web application that notably improved the way they carry out their processes and included all their users.",
-    repository: null,
-  },
+  // {
+  //   picture:
+  //     "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080074/app-sr_kdlzsb.jpg",
+  //   description:
+  //     "S&R provides maintenance services to a large mining consortium in Puno. They needed to streamline their communication and information storage methods, to make processes more efficient. VALTEC developed a mobile application to organize and consolidate all the information on the operation, providing a precise solution.",
+  //   repository: null,
+  // },
+  // {
+  //   picture:
+  //     "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080076/agp-web_qrsznd.gif",
+  //   description:
+  //     "AGP is a company dedicated to the R&D of technologies for the automotive industry. When their database grew exponentially, the excel dashboard they used was no longer enough. VALTEC developed for them a web application that notably improved the way they carry out their processes and included all their users.",
+  //   repository: null,
+  // },
   {
     picture:
       "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/journal-app_yk3rrp.png",
+    title: "Notes App",
     description:
-      "Application to create, save, modify and delete notes, where you can also upload images, to access it you have to login, either with an email or with a gmail account. This application was made with React, Javascript, Redux (for state management), Firebase (for authentication), Cloudinary (for uploading images).",
-    repository:
-      "https://github.com/valerianomacuri/journal-app",
+      "Notes App. Web site similar to Keep Notes from Google. (React, ES6+, Redux, Firebase, Cloudinary).",
+    repository: "https://github.com/valerianomacuri/journal-app",
   },
   {
     picture:
       "https://res.cloudinary.com/valerianomacuri/image/upload/v1651425722/Captura_rl6n3w.png",
+    title: "Movie Listing",
     description:
-      "Search and listing movies, made with React Query, React Router and Chakra UI",
+      "Movie Listing. Web app to search and watch movies and series. (Typescript, React, React Query).",
     repository: "https://reactplus.netlify.app/#/movies",
   },
   {
     picture:
-      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651626910/vue_journal_mbxqe6.png",
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651079601/rn-pokedex_vjx9mp.jpg",
+    title: "Pokedex",
     description:
-      "Notes app created with Vue, Vuex and Vue Router, with the composition API, it also has authentication with firebase, and consumes the firebase REST API to store the notes.",
-    repository:
-      "https://github.com/valerianomacuri/vue-journal-app",
+      "Pokedex. Mobile app to search for pokémons and see their characteristics. (React Native, Typescript, JSS).",
+    repository: "https://github.com/valerianomacuri/rn-pokedex",
+  },
+  {
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/rn-netflix_s03jyw.jpg",
+    title: "Netflix Mobile",
+    description:
+      "NetflixMobile. Mobile app to search for movies, find out their synopsis, and the cast. (React Native, Typescript, JSS).",
+    repository: "https://github.com/valerianomacuri/react-native-netflix",
+  },
+  {
+    picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651626910/vue_journal_mbxqe6.png",
+    title: "Notes App",
+    description:
+      "Notes App. Aplication similar to Keep Notes from Google. (Vue, Vuex, Vue Router, Composition API, Firebase, Rest API).",
+    repository: "https://github.com/valerianomacuri/vue-journal-app",
   },
   {
     picture:
       "https://res.cloudinary.com/valerianomacuri/image/upload/v1651626916/pokeap_hhq9vh.png",
+    title: "PokeGame",
     description:
-      "Guess who is that pokemon, interactive game made with Vue 3.",
+      "PokeGame. Guess who is that pokemon, interactive game made with Vue 3.",
     repository: "https://vue-example-pokemon.netlify.app/",
   },
   {
     picture:
       "https://res.cloudinary.com/valerianomacuri/image/upload/v1651425268/next-pokemon_hqimz1.png",
+    title: "Pokémon Listing",
     description:
-      "App that listing pokemon and you can see details of pokemon, using Next.js with Static Site Generation",
+      "Pokémon Listing. Web application that lists Pokémon and displays their details, using Next.js with static site generation",
     repository: "https://pokemon-static-iota.vercel.app/",
   },
   {
     picture:
-      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651079601/rn-pokedex_vjx9mp.jpg",
-    description:
-      "This application was made with react native, typescript. I consumed the API from pokeapi.co. You can look for your favorite pokemon and know its characteristics",
-    repository:
-      "https://github.com/valerianomacuri/rn-pokedex",
-  },
-  {
-    picture:
-      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/rn-netflix_s03jyw.jpg",
-    description:
-      "This application was made with react native, typescript. I consumed the API from The Movie Database. You can search for the most popular movies, the most recent ones, in premieres and know their synopsis, and the cast",
-    repository:
-      "https://github.com/valerianomacuri/react-native-netflix",
-  },
-  {
-    picture:
-      "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/merch_ro91xb.png",
-    description:
-      "Ecommerce application that integrates the Paypal API, typescript, react hooks and react router were used for this project.",
-    repository:
-      "https://github.com/valerianomacuri/programming-merch",
-  },
-  {
-    picture:
       "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/jondev-notes_ocyp8x.png",
+    title: "ToDo App",
     description:
-      "This app allows you to save notes and to-do lists, use as storage localStorage",
-    repository:
-      "https://github.com/valerianomacuri/jondev-notes",
+      "ToDo App. Web app similar to Microsoft ToDo. (HTML5, CSS3, ES6+, Web APIs).",
+    repository: "https://github.com/valerianomacuri/jondev-notes",
   },
   {
     picture:
       "https://res.cloudinary.com/valerianomacuri/image/upload/v1651080075/netflix_qqtmut.jpg",
+    title: "Netflix Clone",
     description:
-      "It is a netflix landing page clone made with HTML and CSS",
-    repository:
-      "https://github.com/valerianomacuri/netflix",
+      "Netflix Clone. Clone of the Landing Page Netflix. (HTML5, CSS5, BEM).",
+    repository: "https://github.com/valerianomacuri/netflix",
   },
-]
+];
 
 export const tools = [
   {
@@ -102,8 +97,7 @@ export const tools = [
   {
     name: "Css",
     logo: "https://www.svgrepo.com/show/153993/css.svg",
-    description:
-      "CSS is the language we use to style an HTML document.",
+    description: "CSS is the language we use to style an HTML document.",
   },
   {
     name: "Javascript",
@@ -131,8 +125,7 @@ export const tools = [
   {
     name: "Redux",
     logo: "https://www.svgrepo.com/show/354274/redux.svg",
-    description:
-      "A Predictable State Container for JS Apps",
+    description: "A Predictable State Container for JS Apps",
   },
   {
     name: "Jest",
@@ -164,7 +157,7 @@ export const tools = [
     description:
       "React Router is a fully-featured client and server-side routing library for React, a JavaScript library for building user interfaces. ",
   },
-]
+];
 
 export const education = [
   {
@@ -172,7 +165,8 @@ export const education = [
     logo: "https://static.platzi.com/media/users-badges/team_badge.png",
     title: "Frontend With React",
     profile: "https://platzi.com/p/valerianomacuri/",
-    description: "I learn how to develop web, mobile, and desktop applications with React.js. The most popular JavaScript library on the market.",
+    description:
+      "I learn how to develop web, mobile, and desktop applications with React.js. The most popular JavaScript library on the market.",
     year: 2020,
   },
   {
@@ -180,7 +174,8 @@ export const education = [
     logo: "https://plugins.jetbrains.com/static/versions/22408/jetbrains-simple.svg",
     title: "Frontend Development",
     profile: "https://hyperskill.org/profile/264872801",
-    description: "The track covers the concepts of JavaScript, HTML and CSS to discover the power of modern Frontend development.",
+    description:
+      "The track covers the concepts of JavaScript, HTML and CSS to discover the power of modern Frontend development.",
     year: 2022,
   },
   {
@@ -196,10 +191,11 @@ export const education = [
     logo: "https://img.stackshare.io/stack/12741/bcc87e47eb053f5947fa6dbe45beba33a3d1dc56.png",
     title: "Responsive Web Design",
     profile: "https://www.freecodecamp.org/valerianomacuri",
-    description: "I learn the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design.",
+    description:
+      "I learn the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design.",
     year: 2021,
-  }
+  },
+];
 
-]
-
-export const portfolio = "https://res.cloudinary.com/valerianomacuri/image/upload/v1657079110/Leonardo_Valeriano_SAMPLE_CV_HQ_kt83pa.pdf"
+export const portfolio =
+  "https://res.cloudinary.com/valerianomacuri/image/upload/v1657861381/cv_lx1nsg.pdf";
