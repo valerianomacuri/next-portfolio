@@ -1,9 +1,8 @@
-import { motion } from "framer-motion";
-import { useRef } from "react";
+import { Box } from "@chakra-ui/react";
 
-export const ImageMotion = () => {
+export const Profile = () => {
   return (
-    <motion.div
+    <Box
       style={{
         backgroundImage: "url(./photo.png)",
         borderRadius: "50%",

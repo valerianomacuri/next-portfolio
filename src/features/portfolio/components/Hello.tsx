@@ -7,16 +7,12 @@ import {
   Icon,
   Flex,
   chakra,
-} from "@chakra-ui/react"
-import {
-  FiFacebook,
-  FiGithub,
-  FiLinkedin,
-} from "react-icons/fi"
-import { BodyText } from "./BodyText"
-import { HeadlineText } from "./HeadlineText"
-import { ImageMotion } from "./ImageMotion"
-import { SubheadlineText } from "./SubheadlineText"
+} from "@chakra-ui/react";
+import { FiFacebook, FiGithub, FiLinkedin } from "react-icons/fi";
+import { BodyText } from "./BodyText";
+import { HeadlineText } from "./HeadlineText";
+import { Profile } from "./Profile";
+import { SubheadlineText } from "./SubheadlineText";
 export const Hello = () => {
   return (
     <Container
@@ -76,11 +72,7 @@ export const Hello = () => {
               }}
               aria-label="Github"
             >
-              <Icon
-                boxSize="5"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
+              <Icon boxSize="5" viewBox="0 0 24 24" fill="currentColor">
                 <FiGithub />
               </Icon>
             </chakra.a>
@@ -99,11 +91,7 @@ export const Hello = () => {
               }}
               aria-label="Linkedin"
             >
-              <Icon
-                boxSize="5"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
+              <Icon boxSize="5" viewBox="0 0 24 24" fill="currentColor">
                 <FiLinkedin />
               </Icon>
             </chakra.a>
@@ -122,11 +110,7 @@ export const Hello = () => {
               }}
               aria-label="Facebook"
             >
-              <Icon
-                boxSize="5"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
+              <Icon boxSize="5" viewBox="0 0 24 24" fill="currentColor">
                 <FiFacebook />
               </Icon>
             </chakra.a>
@@ -141,10 +125,10 @@ export const Hello = () => {
           }}
         >
           <Box position={"relative"} cursor={"pointer"}>
-            <ImageMotion />
+            <Profile />
           </Box>
         </Box>
       </SimpleGrid>
     </Container>
-  )
-}
+  );
+};
