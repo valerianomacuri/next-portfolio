@@ -31,6 +31,14 @@ export const projects = [
   },
   {
     picture:
+      "https://res.cloudinary.com/valerianomacuri/image/upload/v1657861810/globin-store_ir8vsc.png",
+    title: "Globin Store",
+    description:
+      "Globin Store. E-commerce inspired by Nintendo NES styles. (Typescript, React, HTML5, CSS3).",
+    repository: "https://globin-store.netlify.app",
+  },
+  {
+    picture:
       "https://res.cloudinary.com/valerianomacuri/image/upload/v1651079601/rn-pokedex_vjx9mp.jpg",
     title: "Pokedex",
     description:

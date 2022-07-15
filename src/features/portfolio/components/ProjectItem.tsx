@@ -53,6 +53,7 @@ export const ProjectItem = ({ project }: ProjectItemProps) => {
           width={"fit-content"}
           href={project.repository ? project.repository : ""}
           isDisabled={!project.repository}
+          target="_blank"
         >
           view-project
         </Button>
